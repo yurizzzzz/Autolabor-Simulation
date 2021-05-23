@@ -1,0 +1,8 @@
+prefix=/home/fan/autolabor/install
+
+Name: autolabor_keyboard_control
+Description: Description of autolabor_keyboard_control
+Version: 0.1.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib 
+Requires: 

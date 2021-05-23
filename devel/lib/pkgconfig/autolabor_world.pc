@@ -1,0 +1,8 @@
+prefix=/home/fan/autolabor/devel
+
+Name: autolabor_world
+Description: Description of autolabor_world
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

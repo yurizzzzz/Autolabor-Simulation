@@ -1,0 +1,8 @@
+prefix=/home/fan/autolabor/devel
+
+Name: arbotix_msgs
+Description: Description of arbotix_msgs
+Version: 0.10.0
+Cflags: -I/home/fan/autolabor/devel/include
+Libs: -L${prefix}/lib 
+Requires: message_runtime std_msgs

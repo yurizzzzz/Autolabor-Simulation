@@ -1,0 +1,495 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.5.1-0-g916b5db  Build Version: 1.5.7152.31018
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="autolabor_description">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="-0.0070366 -3.7513E-06 0.13789"
+        rpy="0 0 0" />
+      <mass
+        value="7.9056" />
+      <inertia
+        ixx="0.14089"
+        ixy="1.5164E-06"
+        ixz="-0.0020301"
+        iyy="0.255"
+        iyz="-5.1367E-05"
+        izz="0.37218" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://autolabor_description/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1.0 0.75 0.145 1" />
+      </material>
+    </visual>
+    <collision>s
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://autolabor_description/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  
+  <gazebo reference="base_link">
+      <material>Gazebo/Yellow</material>
+  </gazebo>
+
+  <link
+    name="wheel_lf_link">
+    <inertial>
+      <origin
+        xyz="3.2111E-06 -0.022503 5.6516E-06"
+        rpy="0 0 0" />
+      <mass
+        value="3.1775" />
+      <inertia
+        ixx="0.017898"
+        ixy="-2.8062E-07"
+        ixz="5.9191E-07"
+        iyy="0.033736"
+        iyz="-4.939E-07"
+        izz="0.017898" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://autolabor_description/meshes/wheel_lf_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.3 0.3 0.3 1.0" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://autolabor_description/meshes/wheel_lf_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="wheel_lf_joint"
+    type="continuous">
+    <origin
+      xyz="0.195 0.285 0.062"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="wheel_lf_link" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="wheel_lb_link">
+    <inertial>
+      <origin
+        xyz="3.4118E-06 -0.022503 7.3321E-06"
+        rpy="0 0 0" />
+      <mass
+        value="3.1774" />
+      <inertia
+        ixx="0.017897"
+        ixy="-2.9819E-07"
+        ixz="5.8561E-07"
+        iyy="0.033736"
+        iyz="-6.4087E-07"
+        izz="0.017898" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://autolabor_description/meshes/wheel_lb_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.3 0.3 0.3 1.0" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://autolabor_description/meshes/wheel_lb_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="wheel_lb_joint"
+    type="continuous">
+    <origin
+      xyz="-0.195 0.285 0.062"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="wheel_lb_link" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="wheel_rf_link">
+    <inertial>
+      <origin
+        xyz="-4.5552E-06 0.022503 -6.8781E-06"
+        rpy="0 0 0" />
+      <mass
+        value="3.1774" />
+      <inertia
+        ixx="0.017897"
+        ixy="-3.9829E-07"
+        ixz="7.3849E-07"
+        iyy="0.033736"
+        iyz="-6.0165E-07"
+        izz="0.017898" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://autolabor_description/meshes/wheel_rf_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.3 0.3 0.3 1.0" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://autolabor_description/meshes/wheel_rf_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="wheel_rf_joint"
+    type="continuous">
+    <origin
+      xyz="0.195 -0.285 0.062"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="wheel_rf_link" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="wheel_rb_link">
+    <inertial>
+      <origin
+        xyz="-5.5229E-06 0.022504 -8.143E-06"
+        rpy="0 0 0" />
+      <mass
+        value="3.1774" />
+      <inertia
+        ixx="0.017897"
+        ixy="-4.8241E-07"
+        ixz="8.1653E-07"
+        iyy="0.033736"
+        iyz="-7.1181E-07"
+        izz="0.017898" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://autolabor_description/meshes/wheel_rb_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.3 0.3 0.3 1.0" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://autolabor_description/meshes/wheel_rb_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="wheel_rb_joint"
+    type="continuous">
+    <origin
+      xyz="-0.195 -0.285 0.062"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="wheel_rb_link" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+
+  <gazebo reference="wheel_lf_link">
+      <material>Gazebo/DarkGrey</material>
+  </gazebo>  
+  <gazebo reference="wheel_lb_link">
+      <material>Gazebo/DarkGrey</material>
+  </gazebo>
+  <gazebo reference="wheel_rf_link">
+      <material>Gazebo/DarkGrey</material>
+  </gazebo>
+  <gazebo reference="wheel_rb_link">
+      <material>Gazebo/DarkGrey</material>
+  </gazebo>
+
+  <link name="camera_link">
+      <visual>
+           <origin xyz="0 0 0" rpy="0 0 1.5708"/>
+           <geometry>
+             <mesh filename="package://autolabor_description/meshes/kinect.dae" />
+           </geometry>
+      </visual>
+ </link>
+
+ <joint name="cameara_joint" type="fixed">
+        <origin xyz="0.15 0 0.28" rpy="0 0 0 "/>
+        <parent link="base_link"/>
+        <child link="camera_link"/>
+ </joint>
+           
+
+  <link
+    name="lidar_link">
+    <inertial>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <mass
+        value="0" />
+      <inertia
+        ixx="0"
+        ixy="0"
+        ixz="0"
+        iyy="0"
+        iyz="0"
+        izz="0" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://autolabor_description/meshes/lidar_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.7 0.7 0.7 1.0" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://autolabor_description/meshes/lidar_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="lidar_joint"
+    type="fixed">
+    <origin
+      xyz="-0.12136 -0.003145 0.61764"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="lidar_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+
+  <gazebo reference="lidar_link">
+      <material>Gazebo/Grey</material>
+  </gazebo>
+
+  <gazebo reference="lidar_link">
+      <sensor type="ray" name="rplidar">
+          <pose>0 0 0 0 0 0</pose>
+          <visualize>false</visualize>
+          <update_rate>50</update_rate>
+          <ray>
+              <scan>
+                <horizontal>
+                  <samples>720</samples>
+                  <resolution>1</resolution>
+                  <min_angle>-2.0</min_angle>
+                  <max_angle>2.0</max_angle>
+                 </horizontal>
+                </scan>
+                <range>
+                  <min>0.10</min>
+                  <max>40.0</max>
+                  <resolution>0.01</resolution>
+                </range>
+                <noise>
+                  <type>gaussian</type>
+                   <mean>0.0</mean>
+                   <stddev>0.01</stddev>
+                </noise>
+           </ray>
+           <plugin name="gazebo_rplidar" filename="libgazebo_ros_laser.so">
+               <topicName>/scan</topicName>
+               <frameName>lidar_link</frameName>
+            </plugin>
+       </sensor>
+   </gazebo>
+
+        <transmission name="wheel_lb_joint_trans">
+            <type>transmission_interface/SimpleTransmission</type>
+            <joint name="wheel_lb_joint" >
+                <hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>
+            </joint>
+            <actuator name="wheel_lb_motor">
+                <hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>
+                <mechanicalReduction>1</mechanicalReduction>
+            </actuator>
+        </transmission>
+
+        <transmission name="wheel_rb_joint_trans">
+            <type>transmission_interface/SimpleTransmission</type>
+            <joint name="wheel_rb_joint" >
+                <hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>
+            </joint>
+            <actuator name="wheel_rb_motor">
+                <hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>
+                <mechanicalReduction>1</mechanicalReduction>
+            </actuator>
+        </transmission>
+
+  <gazebo>
+    <plugin name="skid_steer_drive_controller" filename="libgazebo_ros_skid_steer_drive.so">
+      <alwaysOn>true</alwaysOn>
+      <updateRate>100.0</updateRate>
+      <robotNamespace>/</robotNamespace>
+      <leftFrontJoint>wheel_lf_joint</leftFrontJoint>
+      <rightFrontJoint>wheel_rf_joint</rightFrontJoint>
+      <leftRearJoint>wheel_lb_joint</leftRearJoint>
+      <rightRearJoint>wheel_rb_joint</rightRearJoint>
+      <wheelSeparation>0.75</wheelSeparation>
+      <wheelDiameter>0.2</wheelDiameter>
+      <torque>7.5</torque>
+      <commandTopic>cmd_vel</commandTopic>
+      <odometryTopic>odom</odometryTopic>
+      <odometryFrame>odom</odometryFrame>
+      <robotBaseFrame>base_link</robotBaseFrame>
+      <broadcastTF>1</broadcastTF>
+    </plugin>
+  </gazebo>
+
+<!--
+   <gazebo>
+            <plugin name="differential_drive_controller" 
+                    filename="libgazebo_ros_diff_drive.so">
+                <rosDebugLevel>Debug</rosDebugLevel>
+                <publishWheelTF>true</publishWheelTF>
+                <robotNamespace>/</robotNamespace>
+                <publishTf>1</publishTf>
+                <publishWheelJointState>true</publishWheelJointState>
+                <alwaysOn>true</alwaysOn>
+                <updateRate>100.0</updateRate>
+                <legacyMode>true</legacyMode>
+                <leftJoint>wheel_rb_joint</leftJoint>
+                <rightJoint>wheel_lb_joint</rightJoint>
+                <wheelSeparation>0.5</wheelSeparation>
+                <wheelDiameter>0.2</wheelDiameter>
+                <broadcastTF>1</broadcastTF>
+                <wheelTorque>10</wheelTorque>
+                <wheelAcceleration>1.8</wheelAcceleration>
+                <commandTopic>cmd_vel</commandTopic>
+                <odometryFrame>odom</odometryFrame> 
+                <odometryTopic>odom</odometryTopic> 
+                <robotBaseFrame>base_link</robotBaseFrame>
+            </plugin>
+        </gazebo>
+-->
+
+
+
+
+    <gazebo reference="camera_link"> 
+            <sensor type="depth" name="camera">
+            <update_rate>30.0</update_rate> 
+            <camera name="head">
+                <horizontal_fov>1.3962634</horizontal_fov> 
+                <image>
+                    <width>640</width>
+                    <height>480</height>
+                    <format>R8G8B8</format> 
+                </image>
+                <clip>
+                    <near>0.05</near> 
+                    <far>20.0</far> 
+                </clip>
+            </camera>
+           
+            <plugin name="kinect_camera_controller" filename="libgazebo_ros_openni_kinect.so">
+                <alwaysOn>true</alwaysOn>
+                <updateRate>10</updateRate>
+                <cameraName>camera</cameraName> 
+                <imageTopicName>rgb/image_raw</imageTopicName> 
+                
+                <depthImageTopicName>depth/image_raw</depthImageTopicName>
+		<pointCloudTopicName>depth/points</pointCloudTopicName>
+                <cameraInfoTopicName>rgb/camera_info</cameraInfoTopicName>
+		<depthImageCameraInfoTopicName>depth/camera_info</depthImageCameraInfoTopicName>
+                <frameName>camera_depth_optical_frame</frameName>
+                <baseline>0.1</baseline>
+		<distortion_k1>0.0</distortion_k1>
+		<distortion_k2>0.0</distortion_k2>
+		<distortion_k3>0.0</distortion_k3>
+		<distortion_t1>0.0</distortion_t1>
+		<distortion_t2>0.0</distortion_t2>
+                <pointCloudCutoff>0.4</pointCloudCutoff>
+            </plugin>
+        </sensor>
+    </gazebo>
+
+
+</robot>

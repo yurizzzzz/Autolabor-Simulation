@@ -1,0 +1,8 @@
+prefix=/home/fan/autolabor/devel
+
+Name: autolabor_teleop
+Description: Description of autolabor_teleop
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

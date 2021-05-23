@@ -1,0 +1,2 @@
+autolabor_description:autolabor_driver/autolabor_pro1_driver:autolabor_keyboard_control:autolabor_navigation:autolabor_teleop:autolabor_world
+-DCATKIN_DEVEL_PREFIX=/home/fan/autolabor/devel -DCMAKE_INSTALL_PREFIX=/home/fan/autolabor/install -G Unix Makefiles
