@@ -12,7 +12,7 @@ The project is the simualtion of SLAM (including positioning and mapping、path 
 - A GPU with 2GB memory minimum
 - Python3
 - GCC
-## Content tree
+## Content Tree
 ```
 |-- src
 |   |-- CMakeLists.txt
